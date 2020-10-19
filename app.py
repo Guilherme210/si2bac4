@@ -7,13 +7,13 @@ app = Flask(__name__)
 def fibon():
     p = 1
     a = 0
-    r = "0, "
+    r = "1, "
 
-    for i in range (51):
+    for i in range (49):
         tmp = p
         p = p + a
         a = tmp
-        r += str(p) + ","
+        r += str(p) + ", "
     return r
 
 if __name__ == "__main__":
